@@ -19,9 +19,9 @@
     var reference = document.getElementById("mylist");
     
    for(var i = 0; i<names.length; i++){
-        var myname = names[i];
+        var thename = names[i];
         var mylitag = document.createElement("li");
-        mylitag.textContent = myname;
+        mylitag.textContent = thename;
         reference.appendChild(mylitag);
     }
    
@@ -30,10 +30,10 @@
     
     
     
-     for(var i = 0; i<names.length; i++){
-        var myname = names[i];
+     for(var j = 0; j<names.length; j++){
+        var myname = names[j];
         var litag = $("<li/>");
-        $(litag).text = myname;
+        $(litag).text(myname);
         $("#mylist").append(litag);
     }
     

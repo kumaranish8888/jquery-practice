@@ -1,5 +1,10 @@
 (function (){
     
+    
+    function init(){
+        normal();
+        jquery();
+    }
   
     
     var names = ["Anish", "Bikash", "Suvendu", "Anchal", "Joyab", "Sandeep"];
@@ -18,12 +23,15 @@
     
     var reference = document.getElementById("mylist");
     
+    function normal(){
+    
    for(var i = 0; i<names.length; i++){
-        var myname = names[i];
+        var thename = names[i];
+       console.log(thename);
         var mylitag = document.createElement("li");
-       console.log(mylitag);
-        mylitag.textContent = myname;
+        mylitag.textContent = thename;
         reference.appendChild(mylitag);
+    }
     }
     
     
@@ -32,15 +40,19 @@
     
     
     
+    function jquery(){
     
-    
-     for(var i = 0; i<names.length; i++){
-        var myname = names[i];
+     for(var j = 0; j<names.length; j++){
+        var myname = names[j];
+         console.log(myname);
         var litag = $("<li/>");
-         console.log(litag);
-         $(litag).text = myname;
+         $(litag).text(myname);
         $("#mylist").append(litag);
     }
+        
+    }
+    
+    init();
     
     
 })();
