@@ -24,11 +24,6 @@
         mylitag.textContent = myname;
         reference.appendChild(mylitag);
     }
-    
-    console.log("This change is made by Anish locally");
-    console.log("This change is made by Harsha");
-    console.log("This is the second change made by Anish locally");
-    console.log("This is the second change made by Harsha globally");
    
     
     
