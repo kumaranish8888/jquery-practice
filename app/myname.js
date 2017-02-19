@@ -21,9 +21,13 @@
    for(var i = 0; i<names.length; i++){
         var myname = names[i];
         var mylitag = document.createElement("li");
+       console.log(mylitag);
         mylitag.textContent = myname;
         reference.appendChild(mylitag);
     }
+    
+    
+    console.log("This program is regularly modified");
    
     
     
@@ -33,7 +37,8 @@
      for(var i = 0; i<names.length; i++){
         var myname = names[i];
         var litag = $("<li/>");
-        $(litag).text = myname;
+         console.log(litag);
+         $(litag).text = myname;
         $("#mylist").append(litag);
     }
     
