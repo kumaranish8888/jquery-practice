@@ -1,16 +1,16 @@
 (function(){
     
     
-    $("btnFirst").bind("click", first);
-    $("btnLast").bind("click", second);
+    $("#btnFirst").bind("click", first);
+    $("#btnLast").bind("click", second);
     
     
         function first(){
-        console.log($("firstName").val());
+        console.log($("#firstName").val());
     }
     
     function second(){
-        console.log($("lastName").val());
+        console.log($("#lastName").val());
     }
     
 })()
