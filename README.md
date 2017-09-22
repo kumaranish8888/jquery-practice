@@ -1,1 +1,1 @@
-# jquery-practice
+# jQuery-practice
